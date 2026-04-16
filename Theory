@@ -93,7 +93,7 @@ BX1->FI
 
 Inputs can be calculated into one or multiple results
 
-A->A,B,C,AB,AC,BC,ABC,FI...
+A->A,B,C,AB,AC,BC,ABC,FI... permutations are not allowed in list
 
 to calculate FI get the number of states and number of possibilities subtract them and raise by 2. result for previous examples is 2^Q(2 elevated by the states)
 
