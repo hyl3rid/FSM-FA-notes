@@ -1,0 +1,68 @@
+https://www.youtube.com/watch?v=Qa6csfkK7_I
+
+FSM/FA
+
+with output
+
+Moore machine
+mealy machine
+
+
+without output
+DFA DETERMINISTIC FINITE AUTOMATA
+NFA NON DETERMINISTIC FINITE AUTOMATA
+E-NFA EPSILON NON DETERMINISTIC FINITE AUTOMATA
+
+DFA
+simplest model of computation
+very limited memory
+
+get example of structure of DFA to show
+
+circles are known as STATES and have a value alphabetic
+edges have numbers with a direction. label of edges is an input. based on the input the state will choose an edge to transit to another state
+
+arrows coming from nowhere in a state indicates the initial state
+
+states with two circles are considered the final state.
+
+q = set of all states. related values: A B C D
+sigma = inputs. related values: 0 1
+q-not = start state/initial state. related values: A 
+f = set of final states. related values: D
+del = transition function maps from Q cross sigma to q. shows the path the fa will take
+
+	___0______1____
+A	|__C___|__B___|
+B	|__D___|__A___|
+C	|__A___|__D___|
+D	|__B___|__C___|
+
+https://www.youtube.com/watch?v=WrzaPNj9OZ4&list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev&index=8
+
+REGULATE LANGUAGES
+languages recognized by the FSM/FA
+languages not recognized by FSM. requiring memory will cause not to recognize due to memory limit in FSM.
+
+example language of not a regular language
+ababb ababb. unable to store values
+
+a^n b^n == aaaa bbbb. unable to keep count of characters 
+
+OPERATIONS ON LANGUAGES
+UNION A u B = { X | <(SUCH THAT) epsilon A (belong to set A) or x epsilon B (belong to set B) }
+ex 
+
+A = {pq, r}, B = { t, uv }
+UNION operation: AUB = {PQ, R, T, UV }
+CONCATENATION OPERATION = AoB = {pqt,pquv,rt,ruv}
+START OPERATION = A* = {epsilon<(emptystring),pq,r,pqr,rpq,pqpq,rr,pqpqpq,rrr...}
+
+CONCATENATION (JOINING STRINGS) = A o B = { xy | x epsilon A and y epsilon B }
+ex
+
+STAR A* = { x_1,x_2,x_3... | k >= O and each x;epsilon A}
+ex
+
+theorem 1: union of regular languages results in another language
+theorem 2: concatenation of two languages results in regular language
