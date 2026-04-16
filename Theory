@@ -98,3 +98,37 @@ A->A,B,C,AB,AC,BC,ABC,FI... permutations are not allowed in list
 to calculate FI get the number of states and number of possibilities subtract them and raise by 2. result for previous examples is 2^Q(2 elevated by the states)
 
 δ(q0(start),a(input))={q1(states),q2(states)}
+
+🧩 Exercise 1 — DFA (Deterministic)
+📌 Problem
+
+Given a Deterministic Finite Automaton:
+
+States: {q0, q1}
+Alphabet: {a, b}
+Start: q0
+Accepting: {q1}
+
+Transitions:
+
+δ(q0, a) = q1
+δ(q0, b) = q0
+δ(q1, a) = q1
+δ(q1, b) = q0
+
+👉 Question:
+Does the DFA accept the string "abba"?
+
+✅ Answer (step-by-step)
+
+Start at q0
+
+Input	State
+a	q0 → q1
+b	q1 → q0
+b	q0 → q0
+a	q0 → q1
+
+Final state = q1 ✅ (accepting)
+
+👉 Result: ACCEPTED
