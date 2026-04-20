@@ -2,6 +2,9 @@ https://www.youtube.com/watch?v=Qa6csfkK7_I
 
 FSM/FA
 
+What is finite automaton?
+A mathematical model used to recognize patterns based on input strings transitioning between states to meet specified requirements or not.
+
 with output
 
 Moore machine
@@ -9,9 +12,9 @@ mealy machine
 
 
 without output
-DFA DETERMINISTIC FINITE AUTOMATA
-NFA NON DETERMINISTIC FINITE AUTOMATA
-E-NFA EPSILON NON DETERMINISTIC FINITE AUTOMATA
+DFA DETERMINISTIC FINITE automaton
+NFA NON DETERMINISTIC FINITE automaton
+E-NFA EPSILON NON DETERMINISTIC FINITE automaton
 
 DFA
 simplest model of computation
@@ -68,8 +71,8 @@ theorem 1: union of regular languages results in another language
 theorem 2: concatenation of two languages results in regular language
 
 
-Definition of non-deterministic finite automata (NFA)
-In deterministic automata the next state is predictable but in non-deterministic (NFA) there could be random and multiple different next states.
+Definition of non-deterministic finite automaton (NFA)
+In deterministic automaton the next state is predictable but in non-deterministic (NFA) there could be random and multiple different next states.
 epsilon means emptry string/input and could start an empty state
 
 NFA will show a 0 in the diagram meaning what is accepted
