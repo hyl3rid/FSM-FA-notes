@@ -109,6 +109,11 @@ Q → states
 q₀ → start
 F → accepting states
 
+defining end states 
+even/odd transitions will be back and forth
+stays when keeps values as is
+move when adding values
+
 🧩 Exercise 1 — DFA (Deterministic)
 📌 Problem
 
